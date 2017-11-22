@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
+    
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    background: url(1080p-Nature-Wallpaper-HD.jpg) center no-repeat;
+    display: table; // to remove space above 
+    top: 0px;
+    background-size: cover;
+}
+
+.inner {
+    display: table-cell; /* allows to align middle of pag*/
+    vertical-align: middle;
+    width: 100%;
+    max-height: none;
+}
+
+.content {
+    max-height: 500px;
+    margin: 0px auto; /* Works Good without this too */ 
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #f9f3f4;
+    text-shadow: 0px 0px 300px #000;
+    font-size: 500%;
+}
+
+.btn {
+    border: 3px solid;
+    border-radius: 9px;
+    font-family: 'Oswald', sans-serif;
+    color: #036a81;
+    font-size: 130%;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: #fff;
+    border: solid #fff 3px;
+}
+
+p {
+    margin: 3px;
+    padding: 3px;
+    font-family: sans-serif;
+    font-size: 120%;
+    line-height: 210%;
+    text-align: justify;
+}
+
+@media screen and (max-width: 760px) {
+    .content h1 {
+        font-size: 250%;
+        color: rgba(0, 54, 23, 0.83);
+    }
+    
+    .btn {
+        font-size: 100%;
+        padding: 7px 15px;
+        color: #4c550a;
+    }
+    
+    p {
+        font-size: 100%;
+        line-height: 160%;
+    }
+}
